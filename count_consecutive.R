@@ -1,7 +1,7 @@
 count_consecutive <- function(x) {
 
     # ensure a time series with leading 0s is working
-  res_vec <- ifelse(d > 0, 0, 1)
+  res_vec <- ifelse(x > 0, 0, 1)
   
   # loop everything, from the second
   for (i in 2:length(x)) {
